@@ -585,51 +585,51 @@ hr{
     .titulo-secao h2,
     .titulo-sc h2,
     .titulo-sc2 h2{
-        font-size: 40px;
+        font-size: 32px;
         text-align: center;
     }
 
     .produtos,
     .produtos2,
     .produtos3{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        display: flex;
+        overflow-x: auto;
         gap: 15px;
-        margin: 20px 10px;
+        padding: 10px;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
     }
 
-    .produto,
-    .produto2,
-    .produto3{
-        flex: none;
+    .produtos::-webkit-scrollbar,
+    .produtos2::-webkit-scrollbar,
+    .produtos3::-webkit-scrollbar{
+        display: none;
+    }
+
+    .produto{
+        min-width: calc(50% - 8px);
+        flex-shrink: 0;
+        scroll-snap-align: start;
         text-align: center;
     }
 
-    .produto img,
-    .produto2 img,
-    .produto3 img{
+    .produto img{
         width: 100%;
-        max-width: 150px;
+        max-width: 140px;
         height: auto;
     }
 
-    .produto h3,
-    .produto2 h3,
-    .produto3 h3{
-        font-size: 14px;
+    .produto h3{
+        font-size: 13px;
     }
 
-    .produto p,
-    .produto2 p,
-    .produto3 p{
+    .produto p{
         font-size: 18px;
     }
 
-    .produto button,
-    .produto2 button,
-    .produto3 button{
+    .produto button{
         width: 100%;
-        max-width: 140px;
+        max-width: 130px;
         height: 40px;
         font-size: 14px;
     }
