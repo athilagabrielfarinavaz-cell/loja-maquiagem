@@ -80,7 +80,7 @@
         <button>Ver Mais</button>
     </div>
 
-<i class="fa-solid fa-arrow-right seta"></i>
+<button class="seta">❯</button>
     
 </section>
 
@@ -120,7 +120,7 @@
         <button>Ver Mais</button>
     </div>
 
-<i class="fa-solid fa-arrow-right seta"></i>
+<button class="seta">❯</button>
     
 </section>
 
@@ -162,7 +162,7 @@
         <button>Ver Mais</button>
     </div>
 
-<i class="fa-solid fa-arrow-right seta"></i>
+<button class="seta">❯</button>
     
 </section>
 
@@ -277,6 +277,45 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 <!-- Fontes -->
 <link rel="stylesheet"
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<script>
+if (window.innerWidth <= 768) {
+
+    const produtos = document.querySelectorAll(".produtos .produto");
+    const seta = document.querySelector(".produtos .seta");
+
+    let pagina = 0;
+
+    function mostrarProdutos() {
+
+        produtos.forEach(produto => {
+            produto.style.display = "none";
+        });
+
+        let inicio = pagina * 2;
+
+        if (produtos[inicio]) {
+            produtos[inicio].style.display = "block";
+        }
+
+        if (produtos[inicio + 1]) {
+            produtos[inicio + 1].style.display = "block";
+        }
+    }
+
+    mostrarProdutos();
+
+    seta.addEventListener("click", () => {
+        pagina++;
+
+        if (pagina * 2 >= produtos.length) {
+            pagina = 0;
+        }
+
+        mostrarProdutos();
+    });
+}
+</script>
 
 </body>
 </html>

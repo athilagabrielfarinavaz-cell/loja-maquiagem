@@ -607,23 +607,26 @@ hr{
     }
 
     .produtos{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    gap:15px;
-}
+        display:flex;
+        justify-content:center;
+        align-items:flex-start;
+        gap:15px;
+        flex-wrap:nowrap;
+    }
 
-.produto{
-    width:45%;
-    text-align:center;
-}
+    .produto{
+        display:none; 
+        width:45%;
+        text-align:center;
+    }
 
-.seta{
-    display:block;
-    font-size:40px;
-    background:none;
-    border:none;
-    cursor:pointer;
+    .seta{
+        display:block;
+        font-size:40px;
+        background:none;
+        border:none;
+        cursor:pointer;
+    }
 }
 
     .container{
