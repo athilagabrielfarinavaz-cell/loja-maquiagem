@@ -606,37 +606,25 @@ hr{
         display: none;
     }
 
-    .produto{
-        min-width: calc(50% - 8px);
-        flex-shrink: 0;
-        scroll-snap-align: start;
-        text-align: center;
-    }
+    .produtos{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:15px;
+}
 
-    .produto img{
-        width: 100%;
-        max-width: 140px;
-        height: auto;
-    }
+.produto{
+    width:45%;
+    text-align:center;
+}
 
-    .produto h3{
-        font-size: 13px;
-    }
-
-    .produto p{
-        font-size: 18px;
-    }
-
-    .produto button{
-        width: 100%;
-        max-width: 130px;
-        height: 40px;
-        font-size: 14px;
-    }
-
-    .seta{
-        display: none;
-    }
+.seta{
+    display:block;
+    font-size:40px;
+    background:none;
+    border:none;
+    cursor:pointer;
+}
 
     .container{
         flex-direction: column;
