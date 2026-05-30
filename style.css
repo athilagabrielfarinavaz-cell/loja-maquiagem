@@ -65,8 +65,10 @@
 
 .escritas{
     display: flex;
-    gap: 170px;
+    gap: 30px;
     align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .escritas button{
@@ -346,13 +348,10 @@
 }
 
 .logo2{
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  margin-top: -100px;
-  margin-left: -90px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .logo2 img{
@@ -538,10 +537,6 @@ hr{
 
 @media (max-width: 768px){
 
-    body{
-        overflow-x: hidden;
-    }
-
     .telacima{
         flex-direction: column;
         height: auto;
@@ -559,14 +554,18 @@ hr{
     }
 
     .partebaixo{
+        padding: 10px;
         height: auto;
-        padding: 20px;
     }
 
     .escritas{
-        flex-wrap: wrap;
+        gap: 10px;
         justify-content: center;
-        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .escritas button{
+        font-size: 14px;
     }
 
     .produtos,
@@ -576,18 +575,42 @@ hr{
         align-items: center;
     }
 
+    .produto{
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .produto button{
+        width: 180px;
+    }
+
+    .seta{
+        display: none;
+    }
+
     .titulo-secao h2,
     .titulo-sc h2,
     .titulo-sc2 h2{
-        font-size: 32px;
+        font-size: 28px;
+        text-align: center;
     }
 
     .container{
+        flex-direction: column;
         padding: 20px;
     }
 
     .logo2{
         margin: 0;
+    }
+
+    .rodape{
+        padding: 20px;
+        flex-direction: column;
+    }
+
+    .coluna{
+        width: 100%;
     }
 
     .coluna h1{
@@ -602,4 +625,10 @@ hr{
     .coluna ul li{
         font-size: 18px;
     }
+}
+
+html,
+body{
+    width: 100%;
+    overflow-x: hidden;
 }
