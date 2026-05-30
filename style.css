@@ -537,142 +537,160 @@ hr{
 @media (max-width: 768px){
 
     .telacima{
-        flex-direction:column;
-        height:auto;
-        padding:20px;
-        gap:20px;
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+        gap: 20px;
     }
 
     .logo{
-        width:140px;
+        width: 140px;
     }
 
     .search-container{
-        width:100%;
-        margin:0;
+        width: 100%;
+        margin: 0;
     }
 
     .search-container input{
-        height:45px;
-        font-size:16px;
+        height: 45px;
+        font-size: 16px;
     }
 
     .icons{
-        gap:20px;
+        gap: 20px;
     }
 
     .icons a{
-        font-size:30px;
+        font-size: 30px;
     }
 
     .partebaixo{
-        height:auto;
-        padding:10px;
+        height: auto;
+        padding: 10px;
     }
 
     .escritas{
-        display:flex;
-        flex-wrap:wrap;
-        justify-content:center;
-        gap:10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
     }
 
     .escritas button{
-        font-size:14px;
-        padding:5px 10px;
+        font-size: 14px;
+        padding: 5px 10px;
     }
 
     .titulo-secao h2,
     .titulo-sc h2,
     .titulo-sc2 h2{
-        font-size:40px;
-        text-align:center;
+        font-size: 40px;
+        text-align: center;
     }
 
-.produtos,
-.produtos2,
-.produtos3{
-    display:grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap:10px;
-}
-
-.produto{
-    flex:none;
-}
-
-    .produto img{
-        width:100%;
-        max-width:180px;
-        height:auto;
+    .produtos,
+    .produtos2,
+    .produtos3{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        margin: 20px 10px;
     }
 
-    .produto h3{
-        font-size:14px;
+    .produto,
+    .produto2,
+    .produto3{
+        flex: none;
+        text-align: center;
     }
 
-    .produto p{
-        font-size:20px;
+    .produto img,
+    .produto2 img,
+    .produto3 img{
+        width: 100%;
+        max-width: 150px;
+        height: auto;
     }
 
-    .produto button{
-        width:150px;
-        height:45px;
-        font-size:16px;
+    .produto h3,
+    .produto2 h3,
+    .produto3 h3{
+        font-size: 14px;
+    }
+
+    .produto p,
+    .produto2 p,
+    .produto3 p{
+        font-size: 18px;
+    }
+
+    .produto button,
+    .produto2 button,
+    .produto3 button{
+        width: 100%;
+        max-width: 140px;
+        height: 40px;
+        font-size: 14px;
     }
 
     .seta{
-        display:none;
+        display: none;
     }
 
     .container{
-        flex-direction:column;
-        padding:20px;
+        flex-direction: column;
+        padding: 20px;
     }
 
     .logo2{
-        margin:0;
+        margin: 0;
     }
 
     .logo2 img{
-        width:250px;
+        width: 250px;
     }
 
     .content p{
-        font-size:16px;
+        font-size: 16px;
     }
 
     .rodape{
-        padding:20px;
-        flex-direction:column;
+        padding: 20px;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .coluna{
+        width: 100%;
     }
 
     .topo-redes{
-        flex-direction:column;
-        align-items:center;
-        gap:15px;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
     }
 
     .botoes-redes{
-        justify-content:center;
+        justify-content: center;
     }
 
     .coluna h1{
-        font-size:32px;
+        font-size: 32px;
     }
 
     .coluna h3{
-        font-size:22px;
+        font-size: 22px;
     }
 
     .coluna p,
     .coluna ul li{
-        font-size:16px;
+        font-size: 16px;
     }
 
     .icones-pagamento{
-        font-size:35px;
-        flex-wrap:wrap;
+        font-size: 35px;
+        flex-wrap: wrap;
     }
 }
 
